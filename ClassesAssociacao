@@ -1,0 +1,33 @@
+using System;
+
+class Endereco
+{
+		public string logradouro;
+		public int numero;
+		public string cidade;
+
+}
+
+class Pessoa
+{
+	public string nome;
+	public Endereco Residencia;
+
+}
+
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	Pessoa cliente = new Pessoa();
+		cliente.nome = "Joaquim";
+		
+	Endereco casa = new Endereco();
+		casa.logradouro = "Rua das flores";
+		casa.numero = 42;
+		casa.cidade = "Tras dos Montes";
+		
+		cliente.Residencia = casa;
+	}
+}
