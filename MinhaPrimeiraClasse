@@ -1,0 +1,24 @@
+using System;
+
+namespace MinhaPrimeiraClasse
+{
+
+	class Conta
+	{
+	public double saldo;
+	public double limite;
+	public int conta;
+	}
+		
+	
+		
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		new Conta();
+	}
+}
+	
+	
+}
