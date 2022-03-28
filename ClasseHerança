@@ -1,0 +1,48 @@
+using System;
+
+
+class Pessoa
+{
+public string nome;
+public string telefone;
+	
+	public Pessoa (string nome, string telefone)
+	{
+	this.nome = nome;
+	this.telefone = telefone;
+	}
+
+
+}
+
+
+class Aluno : Pessoa
+{
+public string ra;
+	public Aluno (string nome, string telefone, string ra)
+		: base (nome,telefone)
+		{
+			this.ra = ra;
+		}
+}
+
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		Aluno a = new Aluno("Joaquim","teljoaquin","rajoaquin");
+		Console.WriteLine("nome {0}, tel {1}, ra {2}",a.nome, a.telefone,a.ra);
+		
+		Aluno b = new Aluno("Wilker","telwilker","rawilker");
+		Console.WriteLine("{0}, {1} ,{2}",b.nome,b.telefone,b.ra);
+		
+		Aluno c = new Aluno("sandra","telsandra","rasandra");
+		Console.WriteLine("{0}, {1} ,{2}",c.nome,c.telefone,c.ra);
+		
+		Aluno d = new Aluno("ze","telze","raze");
+		Console.WriteLine("{0}, {1} ,{2}",a.nome,b.telefone,c.ra);
+		
+		Console.WriteLine("Hello World");
+	}
+}
