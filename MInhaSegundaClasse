@@ -1,0 +1,27 @@
+using System;
+
+
+
+class Classe
+{
+	public static double multiplique (double a, double b)
+	{
+	return a * b;
+	}
+}
+		
+	
+		
+public class Program
+{ 
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("2 x 3 = {0}",Classe.multiplique(2,3));
+		
+	Console.WriteLine("3 x 3 = {0}",Classe.multiplique(3,3));
+
+		Console.WriteLine("2x3 = {0}",Classe.multiplique(2,3));
+		}
+	
+
+}
