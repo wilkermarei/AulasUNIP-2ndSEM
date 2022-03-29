@@ -1,0 +1,55 @@
+using System;
+
+namespace wilker
+{
+					
+abstract class FiguraGeometrica
+{
+public double largura = 0;
+public double altura = 0;
+//public virtual double CalculaArea()
+//{
+//return -1;
+//}
+
+public abstract double CalculaArea();
+}
+
+class retangulo : FiguraGeometrica
+{
+	public override double CalculaArea()
+	{
+	return largura*altura;
+	}
+}
+
+class triangulo : FiguraGeometrica
+{
+	public override double CalculaArea()
+	{
+	return (largura*altura)/2;
+	}
+}
+
+public class Program
+{
+	public static void Main (string[] args)
+	{
+		retangulo r = new retangulo();
+		r.largura = 8;
+		r.altura = 3;
+		Console.WriteLine(r.CalculaArea());
+	
+		triangulo t = new triangulo();
+		t.largura = 8;
+		t.altura = 3;
+		Console.WriteLine(t.CalculaArea());
+		
+		//FiguraGeometrica fg = new FiguraGeometrica();
+		//fg.largura = 8;
+		//fg.altura = 3;
+		//Console.WriteLine(t.CalculaArea());
+	
+	}
+}
+}
